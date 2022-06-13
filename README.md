@@ -11,6 +11,9 @@ At the end of the game, the player can see the statistics of the time and steps 
 
 <h3>What the Game Looks Like</h3>
 
+<h3>Technology</h3>
+This is a tutorial project created using vanilla JavaScript, html, CSS
+
 <h3>How to Run the Game</h3>
 Play the game in your browser by following this link: https://yuliiak1.github.io/Marvel-game-memory-card-/ .
 
