@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Marvel game</title>
+   <link rel="stylesheet" href="./style.css">
+   <link rel="shortcut icon" href="./images/favicon.ico" type="images/ico">
+</head>
+<body>
+   <!-- Game start modal -->
+   <div class="modal-start">
+      <button class="start-game" id="btn-start" type="button">Start Game</button>
+   </div>
+   <!-- Game start modal end -->
+   
+
+   <!-- Game board -->
+   <div class="wrapper modal-close">
+      <!-- Create a panel with a welcome and game results -->
+      <div class="result">
+         <div class="result-inform">
+            <h1>Marvel Game</h1>
+            <p class="welcome">Welcome</p> 
+            <span class="welcome"></span>
+            <p class="welcome">!</p>
+            <p class="step-info">Step:
+               <span id="step-value">0</span>
+               <span class="timer" id="timer">00:00:00</span>
+            </p>
+         </div>
+      </div>
+      <!-- Create a panel with a welcome and game results end -->
+      
+      <!-- Create 16 hero cards -->
+      <section class="marvel-game" id="carousel">
+         <div class="marvel-card" data-framework="jin-grey">
+            <img src="./images/icons8-jin-grey.svg" alt="jin-grey" class="front-card">
+            <img src="./images/icons8-jin-grey.svg" alt="jin-grey" class="back-card">
+         </div>
+         <div class="marvel-card" data-framework="dedpul">
+            <img src="./images/icons8-jin-grey.svg" alt="jin-grey" class="front-card">
+            <img src="./images/icons8-dedpul.svg" alt="dedpul" class="back-card">
+         </div>
+         <div class="marvel-card" data-framework="iron-man">
+            <img src="./images/icons8-jin-grey.svg" alt="jin-grey" class="front-card">
+            <img src="./images/icons8-iron-man.svg" alt="iron-man" class="back-card">
+         </div>
+         <div class="marvel-card" data-framework="captain-america">
+            <img src="./images/icons8-jin-grey.svg" alt="jin-grey" class="front-card">
+            <img src="./images/icons8-captain-america.svg" alt="captain-america" class="back-card">
+         </div>
+         <div class="marvel-card" data-framework="logan">
+            <img src="./images/icons8-jin-grey.svg" alt="jin-grey" class="front-card">
+            <img src="./images/icons8-logan.svg" alt="logan" class="back-card">
+         </div>
+         <div class="marvel-card" data-framework="tanos">
+            <img src="./images/icons8-jin-grey.svg" alt="jin-grey" class="front-card">
+            <img src="./images/icons8-tanos.svg" alt="tanos" class="back-card">
+         </div>
+         <div class="marvel-card" data-framework="hulk">
+            <img src="./images/icons8-jin-grey.svg" alt="jin-grey" class="front-card">
+            <img src="./images/icons8-hulk.svg" alt="hulk" class="back-card">
+         </div>
+         <div class="marvel-card" data-framework="black-widow">
+            <img src="./images/icons8-jin-grey.svg" alt="jin-grey" class="front-card">
+            <img src="./images/icons8-black-widow.svg" alt="black-widow" class="back-card">
+         </div>
+         
+         <div class="marvel-card" data-framework="captain-america">
+            <img src="./images/icons8-jin-grey.svg" alt="jin-grey" class="front-card">
+            <img src="./images/icons8-captain-america.svg" alt="captain-america" class="back-card">
+         </div>
+         <div class="marvel-card" data-framework="tanos">
+            <img src="./images/icons8-jin-grey.svg" alt="jin-grey" class="front-card">
+            <img src="./images/icons8-tanos.svg" alt="tanos" class="back-card">
+         </div>
+         <div class="marvel-card" data-framework="logan">
+            <img src="./images/icons8-jin-grey.svg" alt="jin-grey" class="front-card">
+            <img src="./images/icons8-logan.svg" alt="logan" class="back-card">
+         </div>
+         <div class="marvel-card" data-framework="jin-grey">
+            <img src="./images/icons8-jin-grey.svg" alt="jin-grey" class="front-card">
+            <img src="./images/icons8-jin-grey.svg" alt="jin-grey" class="back-card">
+         </div>
+         <div class="marvel-card" data-framework="dedpul">
+            <img src="./images/icons8-jin-grey.svg" alt="jin-grey" class="front-card">
+            <img src="./images/icons8-dedpul.svg" alt="dedpul" class="back-card">
+         </div>
+         <div class="marvel-card" data-framework="black-widow">
+            <img src="./images/icons8-jin-grey.svg" alt="jin-grey" class="front-card">
+            <img src="./images/icons8-black-widow.svg" alt="black-widow" class="back-card">
+         </div>
+         <div class="marvel-card" data-framework="hulk">
+            <img src="./images/icons8-jin-grey.svg" alt="jin-grey" class="front-card">
+            <img src="./images/icons8-hulk.svg" alt="hulk" class="back-card">
+         </div>
+         <div class="marvel-card" data-framework="iron-man">
+            <img src="./images/icons8-jin-grey.svg" alt="jin-grey" class="front-card">
+            <img src="./images/icons8-iron-man.svg" alt="iron-man" class="back-card">
+         </div>
+      </section>
+       <!-- Create 16 hero cards end -->
+       <div class="message-win win-hidden">
+         <div class="block-message">
+            <h2>YOU WIN!</h2>
+            <span class="message-result"></span>
+            <button class="restart-game" id="btn-restart" type="button">Play again!</button>
+         </div> 
+       </div>
+   </div>
+   <!-- Game board end-->
+
+   <!-- Add win and lose music -->
+   <audio id="win" src="./sound/SoundWin.mp3" preload="auto"></audio>
+   <audio id="wrong" src="./sound/SoundWrong.mp3" preload="auto"></audio>
+    <!-- Add win and lose music end-->
+
+   <script src="./index.js"></script>
+</body>
+</html>
