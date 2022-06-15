@@ -6,7 +6,7 @@ let boardLocked = false;
 
 const flipCard = e => {
    if (boardLocked) return;
-   const target = e.target.parentElement;
+   const target = e.currentTarget;
    
    if (target === firstCard) return;
 
