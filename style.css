@@ -137,8 +137,10 @@
    position: absolute;
    border-radius: 5px;
    background-color: #c5eef3;
+   -webkit-transform: rotateY(0deg);
    -webkit-backface-visibility: hidden ;
    backface-visibility: hidden ;
+   transform: rotateY(0deg);
 }
 
 
