@@ -99,6 +99,7 @@
 /*Game cards start*/
 .marvel-game {
    margin: auto;
+   -webkit-perspective: 1000px;
    perspective: 1000px;  /*To activate 3-D space*/
    display: grid;
    grid-gap: 2px;
@@ -109,15 +110,23 @@
 .marvel-card {
    display: inline-block;
    margin: 5px;
-   transform: scale(1); 
+   -webkit-transform: scale(1);
+       -ms-transform: scale(1);
+           transform: scale(1); 
    position: relative;
+   -webkit-transition: -webkit-transform 0.5s;
+   transition: -webkit-transform 0.5s;
+   -o-transition: transform 0.5s;
    transition: transform 0.5s;
-   transform-style: preserve-3d;  /*display child elements in 3d*/
+   transition: transform 0.5s, -webkit-transform 0.5s;
+   -webkit-transform-style: preserve-3d;
+           transform-style: preserve-3d;  /*display child elements in 3d*/
 }
 
 .flip {
    display: inline-block;
-   transform: rotateY(180deg);  /*to rotate the element around vertical*/
+   -webkit-transform: rotateY(180deg);
+           transform: rotateY(180deg);  /*to rotate the element around vertical*/
 }
 
 
@@ -128,6 +137,7 @@
    position: absolute;
    border-radius: 5px;
    background-color: #c5eef3;
+   -webkit-backface-visibility: hidden ;
    backface-visibility: hidden ;
 }
 
