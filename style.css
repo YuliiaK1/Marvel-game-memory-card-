@@ -107,6 +107,7 @@
 }
 
 .marvel-card {
+   display: inline-block;
    margin: 5px;
    transform: scale(1); 
    position: relative;
@@ -114,7 +115,8 @@
    transform-style: preserve-3d;  /*display child elements in 3d*/
 }
 
-.marvel-card.flip {
+.flip {
+   display: inline-block;
    transform: rotateY(180deg);  /*to rotate the element around vertical*/
 }
 
