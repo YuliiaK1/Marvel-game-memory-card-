@@ -10,6 +10,7 @@ If the cards do not match, they are turned back . The player is recorded 1 wrong
 At the end of the game, the player can see the statistics of the time and steps of the game.
 
 <h3>What the Game Looks Like</h3>
+<img src="https://github.com/YuliiaK1/Marvel-game-memory-card-/blob/main/images/Memory-game.gif?raw=true" width="940" height="440" />
 
 <h3>Technology</h3>
 This is a tutorial project created using vanilla JavaScript, html, CSS
